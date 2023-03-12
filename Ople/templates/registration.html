@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ople - SignUp</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/regi.css') }}">
+</head>
+
+<body>
+    <div class="MainDiv">
+        <div class="secDiv">
+            <img src="{{ url_for('static', filename='Ologo.png') }}" alt="Ople Logo" width="200">
+            <div class="form">
+                <form method="POST">
+                    {{form.hidden_tag()}}
+                    {{form.username(class='input')}}<br>
+                    {{form.email(class='input')}}<br>
+                    {{form.password(class='input')}}<br>
+                    {{form.conf_pass(class='input')}}<br>
+                    {{form.submit(class='btn')}}
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

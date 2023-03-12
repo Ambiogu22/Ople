@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ople - Posts</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/my_posts.css') }}">
+</head>
+
+<body>
+    <div class="sideB">
+        <nav>
+            <ul>
+                <img src="{{ url_for('static', filename='Oplelogo.png') }}" alt="Ople Logo" width="35">
+                <li><a href="{{url_for('main')}}" style="text-decoration: none;">Home</a>
+                </li>
+                <li><a href="{{url_for('my_posts')}}" style="text-decoration: none;">My Posts</a></li>
+                <li><a href="{{url_for('settings')}}" style="text-decoration: none;">Settings</a></li>
+                <li><a href="{{url_for('logout')}}" style="text-decoration: none;">LogOut</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="myP">
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">My posts</h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ople - LogIn</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="secDiv">
+            <div class="wel">
+                <div class="wel1">
+                    <div class="wel2">
+                        <img src="{{ url_for('static', filename='Ologo.png') }}" alt="Ople Logo" width="200">
+                        <p style="font-size: 24px; font-family: arial; color: #0A00A9; margin:0;">Not
+                            sure
+                            which
+                            movie or series<br> to watch now? Join Ople and interact<br> with other people to find a
+                            good
+                            one.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form1">
+                    <div class="form2>">
+                        <form method="POST">
+                            {{form.hidden_tag()}}
+                            {{form.username(class='input')}}<br>
+                            {{form.password(class='input')}}<br>
+                            {{form.submit(class='btn')}}
+                        </form>
+                        <hr style="width:100%; margin-top: 30px;">
+                        <h3 class="createAtxt">Don't have an account?</h3>
+                        <h3 class="btnR"><a href="{{url_for('register')}}" class="btnR1">Create New Account</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

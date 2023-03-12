@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="sideB">
+        <nav>
+            <ul>
+                <img src="{{ url_for('static', filename='Oplelogo.png') }}" alt="Ople Logo" width="35">
+                <li><a href="{{url_for('main')}}" style="text-decoration: none;">Home</a></li>
+                <li><a href="{{url_for('my_posts')}}" style="text-decoration: none;">My Posts</a></li>
+                <li><a href="{{url_for('settings')}}" style="text-decoration: none;">Settings</a></li>
+                <li><a href="{{url_for('logout')}}" style="text-decoration: none;">LogOut</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="makepost">
+            <h3>Make a Post</h3>
+        </div>
+        <div class="hide">
+            <div class="hide1">
+                <h3 class="uNameP">{{current_user.username}}'s
+                    post</h3>
+                <input type="text" placeholder='"Title", "Serie Name", "Movie Name"' class="topic"><br>
+                <textarea class="txtA" placeholder="Start typing..."></textarea>
+                <h3 class="postbtn">post</h3>
+            </div>
+        </div>
+        <div class="post">
+            <p>POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST POST POST POST POST
+                POST POST POST POST POST POST POST POST POST POST POST POST POST POST
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

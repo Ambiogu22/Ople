@@ -1,0 +1,149 @@
+body {
+    background-color: #F9F9F9;
+    margin: 0;
+    height: 100%;
+}
+
+.sideB {
+    position: fixed;
+    display: inline-block;
+    width: 12%;
+    height: 100%;
+    background-color: #FBFBFC;
+    border-right: 2px solid #000;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.main {
+    display: inline-block;
+    width: 88%;
+    margin-left: 180px;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 40px 0;
+    padding: 18px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+}
+
+nav ul li a {
+    padding: 20px;
+}
+
+nav ul li a:link {
+    color: #444444;
+}
+
+nav ul li a:visited {
+    color: #444444;
+}
+
+nav ul li:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    border-right: 2px solid #000;
+}
+
+
+.makepost {
+    display: inline-block;
+    background-color: #FCD2FF;
+    margin: auto 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 320px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 15px #8E8E8E;
+}
+
+.makepost h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.post {
+    display: inline-block;
+    background-color: bisque;
+    margin: auto 0;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.hide {
+    background-color: #FCD2FF;
+    display: inline-block;
+    margin: auto 0;
+    width: 600px;
+
+    margin-left: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 15px #8E8E8E;
+}
+
+.uNameP {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topic {
+    width: 220px;
+    padding: 14px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0027C7;
+    margin-bottom: 10px;
+}
+
+.txtA {
+    width: 300px;
+    padding: 14px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0027C7;
+    margin-bottom: 10px;
+}
+
+.postbtn {
+    width: 75px;
+    border: 1px solid #0027C7;
+    border-radius: 5px;
+    background-color: #0027C7;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.hide1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
